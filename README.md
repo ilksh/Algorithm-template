@@ -1,4 +1,4 @@
-# Algorithm-template (Under consturction)
+# Algorithm-template 
 ---
 #### Data Structure
 - Stack
