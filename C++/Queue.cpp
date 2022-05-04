@@ -30,8 +30,7 @@ bool empty(Queue *q)
     if(q->front == q->back)
         return true;
     
-    else
-        return false;
+    return false;
 }
 
 bool full(Queue *q)
@@ -39,8 +38,8 @@ bool full(Queue *q)
     // queue is saturated
     if(q->back == MAX_SIZE -1)
         return true;
-    else
-        return false;
+    
+    return false;
 }
 
 void push(Queue *q, element item)
@@ -50,12 +49,10 @@ void push(Queue *q, element item)
         cout <<"Queue is saturated \n";
         return;
     }
-    else
-    {
-        q->back += 1;
-        q->array[q->back] = item;
-        print(q);
-    }
+    
+    q->back += 1;
+    q->array[q->back] = item;
+    print(q);
 }
 
 void pop(Queue *q)
@@ -65,14 +62,12 @@ void pop(Queue *q)
         cout << "Queue is empty";
         return;
     }
-    else
-    {
-        q->front += 1;
-        int result = q->array[q->front];
-        cout << result << " was removed\n";
-        print(q);
-        return;
-    }
+    
+    q->front += 1;
+    int result = q->array[q->front];
+    cout << result << " was removed\n";
+    print(q);
+    return;
 }
 
 int main()
