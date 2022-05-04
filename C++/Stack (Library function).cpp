@@ -18,7 +18,4 @@ int main()
         auto cur = s.top(); s.pop();
         cout << " "<<cur;
     }
-
 }
-
-
