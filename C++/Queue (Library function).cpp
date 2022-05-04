@@ -11,8 +11,8 @@ int main()
     for(int num = 1; num< 10; num+=2)
         q.push(num);
     
-    q.pop();    // q: [ 3(front) 5 7 9 ]
-    q.pop();    // q: [ 5(front) 7 9 ]
+    q.pop();    // q: [ 3 5 7 9 ]
+    q.pop();    // q: [ 5 7 9 ]
     
     cout <<"q: [ ";
     while(!q.empty())
