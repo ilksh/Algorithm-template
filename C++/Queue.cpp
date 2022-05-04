@@ -42,7 +42,7 @@ bool full(Queue *q)
     return false;
 }
 
-void push(Queue *q, element item)
+void enqueue(Queue *q, element item)
 {
     if(full(q))
     {
@@ -55,7 +55,7 @@ void push(Queue *q, element item)
     print(q);
 }
 
-void pop(Queue *q)
+void deque(Queue *q)
 {
     if (empty(q))
     {
@@ -74,9 +74,9 @@ int main()
 {
     Queue q;
 
-    push(&q,1); // q: [ 1 ]
-    push(&q,2); // q: [ 1 2 ]
-    push(&q,5); // q: [ 1 2 5 ]
-    pop(&q);    // q: [ 2 5 ]
+    enqueue(&q,1); // q: [ 1 ]
+    enqueue(&q,2); // q: [ 1 2 ]
+    enqueue(&q,5); // q: [ 1 2 5 ]
+    dequeue(&q);    // q: [ 2 5 ]
 }
 
