@@ -1,13 +1,13 @@
 #include<iostream>
 using namespace std;
 
-const int MAX_N = 10001;
+const int MAX_SIZE = 10001;
 
 // typedef (variable) element
 // variable -> int, char, string…
 typedef int element;
 typedef struct{
-    element array[MAX_N];
+    element array[MAX_SIZE];
     int top;
 } Stack;
 
@@ -29,7 +29,7 @@ bool empty(Stack *s)
 bool full(Stack *s)
 {
     // stack is full
-    if (s->top == MAX_N -1)
+    if (s->top == MAX_SIZE -1)
         return true;
     else
         return false;
@@ -96,8 +96,3 @@ int main()
     
     return 0;
 }
-
-
-
-
-
