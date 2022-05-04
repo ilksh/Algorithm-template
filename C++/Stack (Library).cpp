@@ -9,8 +9,8 @@ int main()
 {
     s.push(1);  // s = [1]
     s.push(2);  // s = [2(top), 1]
-    s.push(5);  // s = [5 (top), 2, 1]
-    s.pop();
+    s.push(5);  // s = [5(top), 2, 1]
+    s.pop();    // s = [2(top), 1]
    
     // printing from the top
     while(!s.empty())
