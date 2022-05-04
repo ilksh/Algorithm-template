@@ -22,8 +22,8 @@ bool empty(Stack *s)
     // stack is empty
     if (s->top == -1)
         return true;
-    else
-        return false;
+    
+    return false;
 }
 
 bool full(Stack *s)
@@ -31,8 +31,8 @@ bool full(Stack *s)
     // stack is full
     if (s->top == MAX_SIZE -1)
         return true;
-    else
-        return false;
+    
+    return false;
 }
 
 void push(Stack *s, element item)
@@ -42,9 +42,9 @@ void push(Stack *s, element item)
         cout << "Stack is saturated";
         return;
     }
-    else
-        s->top += 1;
-        s->array[s->top] = item;
+    
+    s->top += 1;
+    s->array[s->top] = item;
 }
 
 void pop(Stack *s)
@@ -54,9 +54,8 @@ void pop(Stack *s)
         cout << "Stack is empty";
         return;
     }
-    else
-        s->top -=1;
     
+    s->top -=1;
 }
 
 void print(Stack *s)
@@ -66,15 +65,13 @@ void print(Stack *s)
         cout << "Stack is empty";
         return;
     }
-    else
-    {
-        cout << "s = [ ";
+    
+    cout << "s = [ ";
+    
+    for(int i=0; i< s->top+1; i++)
+        cout << s->array[i] <<" ";
         
-        for(int i=0; i< s->top+1; i++)
-            cout << s->array[i] <<" ";
-        
-        cout << "]\n";
-    }
+    cout << "]\n";
 }
 
 int main()
