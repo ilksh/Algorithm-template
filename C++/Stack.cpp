@@ -83,9 +83,9 @@ int main()
     
     init(&s);
     // input data
-    push(&s, 1); // s = [1 (top) ]
-    push(&s, 2); // s = [1, 2 (top)]
-    push(&s, 3); // s = [1, 2, 3 (top)]
+    push(&s, 1); // s = [1(top) ]
+    push(&s, 2); // s = [1, 2(top)]
+    push(&s, 3); // s = [1, 2, 3(top)]
     print(&s);
     
     pop(&s);
