@@ -5,7 +5,7 @@
 - Queue
 - Priority Queue
 - Linked list
-- 
+
 #### Graph  
 - DFS
 - BFS
