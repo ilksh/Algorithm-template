@@ -3,7 +3,9 @@
 #### Data Structure
 - Stack
 - Queue
-- Priority Queue
+  - Circular Queue
+  - Deque
+  - Priority Queue
 - Linked list
 
 #### Graph  
