@@ -63,7 +63,7 @@ void enqueue(Queue *q, element item)
     q->array[q->rear] = item;
 }
 
-void deque(Queue *q)
+void dequeue(Queue *q)
 {
     if(empty(q))
     {
