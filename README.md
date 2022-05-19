@@ -27,3 +27,6 @@
 - Radix sort
 - Heap sort
 - Counting sort
+
+#### Tree
+- Union-Find
