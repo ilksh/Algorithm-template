@@ -8,6 +8,10 @@
   - Priority Queue
 - Linked list
 
+#### Tree
+- Union-Find
+- Trie
+
 #### Graph  
 - DFS
 - BFS
@@ -28,6 +32,4 @@
 - Heap sort
 - Counting sort
 
-#### Tree
-- Union-Find
-- Trie
+
