@@ -30,3 +30,4 @@
 
 #### Tree
 - Union-Find
+- Trie
