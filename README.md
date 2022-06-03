@@ -45,8 +45,3 @@
     - MSD (Most Significant Digit)
 - Heap sort
 - Counting sort
-
-### Algorithm complexity analysis
-- Big-O 
-- Big-Theta
-- Big-theta
