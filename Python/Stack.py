@@ -1,49 +1,35 @@
 class Stack:
     def __init__(self):
-        self.stack = []
+        self.stack = [None for _ in range(10000)]
+        self.top = -1
 
     def empty(self):
-        # Stack is empty
-        if len(self.stack) == 0:
+        if self.top == -1:
             return True
-
-        else: return False
-
-    def size(self): return len(self.stack)
-    def clear(self): self.stack = []
+        return False
 
     def push(self, data):
-        self.stack.append(data)
+        self.top += 1
+        self.stack[self.top] = data
 
     def pop(self):
-        if self.empty():
-            print("unable to pop from empty stack")
-            return
-        else:
-            result = self.stack.pop()
-            print("{} was removed from the stack".format(result))
+        self.top -= 1
 
-    def print(self):
-        print(self.stack)
-
-    def peek(self):
-        if self.empty():
-            print("stack is empty. unable to perform the operation")
-            return
-
-        else:
-            print(self.stack[-1])
+    def print_stack(self):
+        print("stack = [ ", end="")
+        for i in range(self.top+1):
+            print(self.stack[i], end=" ")
+        print("]")
 
 
 if __name__ == '__main__':
     s = Stack()
-    s.push(1)
-    s.push(2)
-    s.push(5)
-    s.print()   # s = [1,2,5]
-    s.pop()     # 5
-    s.print()   # s = [1, 2]
 
-    print("size: ", s.size())             # 2
-    print("Is stack empty? ", s.empty())  # False
-    
+    s.push(1)
+    s.push(3)
+    s.push(5)
+    s.push(7)   # stack = [ 1 3 5 7 ]
+    s.print_stack()
+    s.pop()     # stack = [ 1 3 5 ]
+    s.print_stack()
+
