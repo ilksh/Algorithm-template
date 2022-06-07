@@ -33,3 +33,4 @@ if __name__ == '__main__':
     s.pop()     # stack = [ 1 3 5 ]
     s.print_stack()
 
+    print(s.empty())    # False
