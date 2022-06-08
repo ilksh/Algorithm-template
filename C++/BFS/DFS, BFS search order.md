@@ -1,4 +1,3 @@
-
  ```mermaid
 graph TD;
     1-->2;
@@ -17,6 +16,3 @@ graph TD;
  
 - bfs search order
 - 1->2->6->7->9->3->4->8->5
-<!--Table-->
-|A|B|;
-|C|D|;
