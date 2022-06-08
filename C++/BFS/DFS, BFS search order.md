@@ -20,4 +20,4 @@ bfs search order
 
 <!-- Table -->
 |Algorithm|Step|
-|DFS||1|2|3|4|5|6|7|8|9|
+|DFS|1|2|3|4|5|6|7|8|9|
