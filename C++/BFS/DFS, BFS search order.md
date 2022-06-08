@@ -17,3 +17,7 @@ dfs search order
  
 bfs search order
 1->2->6->7->9->3->4->8->5
+
+<!-- Table -->
+|||Step|
+|DFS||1||2||3||4||5||6||7||8||9|
