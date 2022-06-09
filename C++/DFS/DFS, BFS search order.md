@@ -8,7 +8,6 @@ graph TD;
     2-->4;
     4-->5;
     7-->8;
- 
 ```
 ---
 - dfs search order
