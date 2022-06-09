@@ -45,3 +45,7 @@
     - MSD (Most Significant Digit)
 - Heap sort
 - Counting sort
+
+#### Recursion
+- Backtracking
+- Dynamic Programming
