@@ -11,6 +11,7 @@ graph TD;
 ```
 ---
 ### Minimum Spanning Tree
+#### child -> parent
  ```mermaid
 graph LR;
    1-->|2|3
@@ -18,10 +19,4 @@ graph LR;
    3-->|2|5
    4-->|8|5
 ```
- ```mermaid
-graph RL;
-   3-->|2|1
-   3-->|3|2
-   5-->|2|3
-   5-->|8|4
-```
+
