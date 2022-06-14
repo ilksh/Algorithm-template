@@ -8,7 +8,7 @@ graph LR;
     2---4;
     4---5;
     7---8;
- 
+    6---4;
 ```
 ---
 - dfs search order
