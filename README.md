@@ -11,6 +11,9 @@
 #### Tree
 - Union Find 
 - Trie
+-  Minimum Spanning Tree
+    - Kruskal's MST Algorithm
+    - Prim's MST Algorithm
 - BST (Binary search Tree)
     - Binary search 
     - BST Traverse 
@@ -28,9 +31,6 @@
 - Dijkstra's
 - Bellman ford
 - Floyd warshall 
--  Minimum Spanning Tree
-    - Kruskal's MST Algorithm
-    - Prim's MST Algorithm
 
 #### Sorting
 - Quick sort
