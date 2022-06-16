@@ -5,24 +5,7 @@ def adj_check(u, v, w):
     global adj
     adj[u].append((w, v))
 
-
-def fill_adj():
-    # adj(node1, node2, weight)
-    # the route from node1 to node2 takes as much time as weight
-    adj_check(1, 2, 10)
-    adj_check(1, 3, 20)
-    adj_check(1, 4, 50)
-
-    adj_check(2, 3, 7)
-    adj_check(2, 4, 30)
-
-    adj_check(3, 2, 8)
-    adj_check(3, 4, 60)
-    adj_check(3, 5, 43)
-
-    adj_check(4, 5, 15)
-
-
+    
 def dijkstra(start):
     global time, heap, adj
 
@@ -60,7 +43,21 @@ if __name__ == '__main__':
     for i in range(10):
         adj[i+1] = []
 
-    fill_adj()
+    # adj(node1, node2, weight)
+    # the route from node1 to node2 takes as much time as weight
+    adj_check(1, 2, 10)
+    adj_check(1, 3, 20)
+    adj_check(1, 4, 50)
+
+    adj_check(2, 3, 7)
+    adj_check(2, 4, 30)
+
+    adj_check(3, 2, 8)
+    adj_check(3, 4, 60)
+    adj_check(3, 5, 43)
+
+    adj_check(4, 5, 15)
+    
     dijkstra(1)
 
     for i in range(1, 6):
