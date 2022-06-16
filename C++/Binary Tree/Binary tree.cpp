@@ -78,12 +78,3 @@ int main()
     cout << "\n===postorder===\n";
     postorder(root);
 }
-
-/*
- ===preorder===
- (1) (2) (4) (3) (5) (7) (6)
- ===inorder===
- (4) (2) (1) (5) (7) (3) (6)
- ===postorder===
- (4) (2) (7) (5) (6) (3) (1)
- */
