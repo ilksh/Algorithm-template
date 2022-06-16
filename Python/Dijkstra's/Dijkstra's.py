@@ -60,3 +60,10 @@ if __name__ == '__main__':
 
     for i in range(1, 6):
         print("{} : {}".format(i, time[i]))
+    """
+    1 : 0
+    2 : 10
+    3 : 17
+    4 : 40
+    5 : 55
+    """
