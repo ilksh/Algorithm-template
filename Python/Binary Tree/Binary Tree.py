@@ -41,9 +41,10 @@ if __name__ == '__main__':
 
     node = [None for _ in range(7)]
 
-    for idx in range(1,7):
+    for idx in range(1, 7):
         node[idx] = Node(idx)
 
+    # link two nodes
     node[1].insert_left(node[2])
     node[1].insert_right(node[3])
 
