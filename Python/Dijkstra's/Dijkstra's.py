@@ -32,13 +32,18 @@ def dijkstra(start):
     while heap:
         cur_w, cur_node = heapq.heappop(heap)
 
+        # do not search unnecessary node
         if time[cur_node] < cur_w:
             continue
 
+        # search all nodes which are connected to the current node
         for edge in adj[cur_node]:
+            # edge = (weight, node)
             next_w, next_node = edge
             next_w += cur_w
+            # if the cost of new route is lower than that of current
             if next_w < time[next_node]:
+                # update information
                 time[next_node] = next_w
                 heapq.heappush(heap, (next_w, next_node))
 
