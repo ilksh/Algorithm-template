@@ -23,6 +23,8 @@
         - Balanced search Tree
 -  Heap
     - Huffman code
+
+- LCA (Lowest Common Ancestor) 
     
 #### Graph  
 - DFS
