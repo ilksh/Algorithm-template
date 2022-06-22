@@ -28,9 +28,9 @@ if __name__ == '__main__':
     s.push(1)
     s.push(3)
     s.push(5)
-    s.push(7)   # stack = [ 1 3 5 7 ]
+    s.push(7)           # stack = [ 1 3 5 7 ]
     s.print_stack()
-    s.pop()     # stack = [ 1 3 5 ]
+    s.pop()             # stack = [ 1 3 5 ]
     s.print_stack()
 
     print(s.empty())    # False
