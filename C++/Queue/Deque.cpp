@@ -73,7 +73,7 @@ void appendleft(Deque *dq, element item)
     }
     
     dq->array[dq->front] = item;
-    dq->front = ((dq->front - 1)+MAX_SIZE) % MAX_SIZE;
+    dq->front = ((dq->front - 1)+ MAX_SIZE) % MAX_SIZE;
 }
 
 // pop-rear
