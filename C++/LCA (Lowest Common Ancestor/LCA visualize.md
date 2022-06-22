@@ -1,4 +1,5 @@
- ```mermaid
+### Tree
+```mermaid
 graph TD;
     1---2;
     1---3;
