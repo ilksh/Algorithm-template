@@ -1,14 +1,14 @@
 # Algorithm-template 
 ---
-#### Data Structure
+### Data Structure
 - Stack
 - Queue
   - Circular Queue
   - Deque
   - Priority Queue
 - Linked list
-
-#### Tree
+---
+### Tree
 - Union Find 
 - Trie
 -  Minimum Spanning Tree
@@ -25,16 +25,16 @@
     - Huffman code
 
 - LCA (Lowest Common Ancestor) 
-    
-#### Graph  
+---
+### Graph  
 - DFS
 - BFS
 - Topological Sorting
 - Dijkstra's
 - Bellman ford
 - Floyd warshall 
-
-#### Sorting
+---
+### Sorting
 - Quick sort
 - Bubble sort
 - Selection sort
@@ -47,7 +47,12 @@
     - MSD (Most Significant Digit)
 - Heap sort
 - Counting sort
-
-#### Recursion
+---
+### Recursion
 - Backtracking
 - Dynamic Programming
+---
+### Math
+- Linear Algebra
+- Geometry
+- Number Theory
