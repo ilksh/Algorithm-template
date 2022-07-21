@@ -90,23 +90,23 @@
 |d[3]|2 -> 1|
 |d[4]|-1|
 |d[5]|0|
-—
+---
 ## Round 6
 |idx|dist|
-|—|————|
+|--|--------|
 |d[1]|-2 -> -3|
 |d[2]|0|
 |d[3]|1|
 |d[4]|-1|
 |d[5]|0 -> -1|
-—
+---
 ## Round 7
 |idx|dist|
-|—|————|
-|d[1]|-3|
+|--|--------|
+|d[1]|--3|
 |d[2]|0 -> -1|
 |d[3]|1 -> 0|
 |d[4]|-1 -> -2|
 |d[5]|-1|
-—
+---
 ### Test Case 2: Negative cycle exists because the information continues to be updated
