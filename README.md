@@ -7,6 +7,7 @@
   - Deque
   - Priority Queue
 - Linked list
+- Heap
 ---
 ### Tree
 - Union Find 
