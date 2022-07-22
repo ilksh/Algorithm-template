@@ -35,7 +35,7 @@ bool bellmanFord(int start)
                 dist[e.v] = dist[e.u] + e.w;
                 updated = true;
                 
-                // m - 1 repeat means that the shortest path continues to be update
+                // m - 1 repeat means that the shortest path continues to be updated
                 // there is a negative cycle
                 if(round == m-1)
                     isCycle = true;
