@@ -7,6 +7,8 @@ const int MAX_V = 1e2 + 2;  // max number of edge
 int n, m ;  // n = number of node, m = number of edge
 int dist[MAX_V][MAX_V];
 
+// Unlike dijkstra's, floyd_warshall has no fixed start point
+// Floyd_warshall finds the shortest routes between every pair of vertices
 void floydWarshall()
 {
     for(int pass=1; pass<= n; ++pass){
