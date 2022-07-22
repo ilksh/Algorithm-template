@@ -5,15 +5,18 @@ def bellman_ford(start):
     dist = [INF for _ in range(n + 1)]
     dist[start] = 0
 
+    # repeat multiple rounds to determine if a negative cycle exists
     for round in range(m):
         updated = False
 
         for e in edge:
-            node1, node2, weight = e
-            if dist[node1] is not INF and dist[node1] + weight < dist[node2]:
-                dist[node2] = dist[node1] + weight
+            src, dst, weight = e
+            if dist[src] is not INF and dist[src] + weight < dist[dst]:
+                dist[dst] = dist[src] + weight
                 updated = True
 
+                # m - 1 repeat means that the shortest path continues to be updated
+                # there is a negative cycle
                 if round == m - 1:
                     is_cycle = True
 
