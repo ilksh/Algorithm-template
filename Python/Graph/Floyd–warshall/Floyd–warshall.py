@@ -2,16 +2,15 @@ def floyd_warshall():
     global dist
 
     for transit in range(1, n+1):
-        for start in range(1, n+1):
-            for terminal in range(1, n+1):
-                if start == terminal:
+        for src in range(1, n+1):
+            for dst in range(1, n+1):
+                if src == dst:
                     continue
-                dist[start][terminal] = min(dist[start][transit] + dist[transit][terminal],
-                                            dist[start][terminal])
+                dist[src][dst] = min(dist[src][dst], dist[src][transit] + dist[transit][dst])
 
-    for start in range(1, n+1):
-        for terminal in range(1, n+1):
-            print(dist[start][terminal] if (dist[start][terminal] is not INF) else 0, end=" ")
+    for src in range(1, n+1):
+        for dst in range(1, n+1):
+            print(dist[src][dst] if (dist[src][dst] is not INF) else 0, end=" ")
         print()
 
 
@@ -27,4 +26,6 @@ if __name__ == '__main__':
         u, v, w = map(int, input().split())
         dist[u][v] = min(dist[u][v], w)
 
+    # Unlike dijkstra's, floyd_warshall has no fixed start point.
+    # Floyd_warshall finds the shortest routes between every pair of vertices.
     floyd_warshall()
