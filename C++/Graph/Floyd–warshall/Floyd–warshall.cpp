@@ -14,8 +14,8 @@ void floydWarshall()
             for(int to = 1; to <= n; ++to){
                 if(from == to) continue;
                 
-                dist[from][to] = min(dist[from][pass] + dist[pass][to],
-                                     dist[from][to]);
+                dist[from][to] = min(dist[from][to],dist[from][pass] + dist[pass][to]);
+                
             }
         }
     }
