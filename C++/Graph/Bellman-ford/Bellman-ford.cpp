@@ -62,12 +62,13 @@ int main()
         edge[i] = {u,v,w};
     }
     
-    bool negativeCycle = bellmanFord(1);
+    int start = 1;
+    bool negativeCycle = bellmanFord(start);
     
     if(negativeCycle) cout << -1 << "\n";
     
     else{
-        for(int i=2; i<=n; ++i){
+        for(int i=1; i<=n; ++i) if(i!=start){
             cout << (dist[i] == INF ? -1 : dist[i]) << '\n';
         }
     }
