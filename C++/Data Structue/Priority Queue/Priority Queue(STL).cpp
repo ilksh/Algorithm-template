@@ -52,7 +52,7 @@ public:
         while(cur <= cnt){
             int left =(cur << 1) <= cnt ? (cur << 1) : -1;
             int right = (cur << 1 | 1) <= cnt ? (cur << 1 | 1): -1;
-            int child = cur; // the index of the largest value is chile
+            int child = cur; // the index of the largest value is child
             
             // cur node is leaf node
             if(left == -1) break;
