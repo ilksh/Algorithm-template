@@ -15,16 +15,16 @@ void printList(int list[])
 void selectionSort(int list[])
 {
     for(int i=0; i<10-1; ++i){
-        int least_idx= i;
+        int leastIdx= i;
         
         for(int j=i+1; j<10; ++j){
-            if(list[j] < list[least_idx])
-                least_idx = j;
+            if(list[j] < list[leastIdx])
+                leastIdx = j;
         }
         
         if(i==least_idx) continue;
         
-        swap(list[i], list[least_idx], temp);
+        swap(list[i], list[leastIdx], temp);
     }
 }
 
