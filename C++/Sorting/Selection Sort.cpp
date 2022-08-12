@@ -3,6 +3,7 @@
 
 using namespace std;
 
+int n = 10;
 int temp;
 
 void printList(int list[])
@@ -14,10 +15,10 @@ void printList(int list[])
 
 void selectionSort(int list[])
 {
-    for(int i=0; i<10-1; ++i){
+    for(int i=0; i<n-1; ++i){
         int leastIdx= i;
         
-        for(int j=i+1; j<10; ++j){
+        for(int j=i+1; j<n; ++j){
             if(list[j] < list[leastIdx])
                 leastIdx = j;
         }
