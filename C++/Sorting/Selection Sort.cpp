@@ -8,7 +8,7 @@ int temp;
 
 void printList(int list[])
 {
-    for(int i=0; i<10; ++i)
+    for(int i=0; i<n; ++i)
         cout << list[i] << " ";
     cout << "\n";
 }
