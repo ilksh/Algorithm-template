@@ -1,3 +1,8 @@
+# Bubble Sort
+- Start from the leftmost index
+- Align the largest number to be located at the right end
+---
+
 ```mermaid
    graph LR;
    9---7;
