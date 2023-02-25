@@ -8,6 +8,7 @@
   - Priority Queue
 - Linked list
 - Heap
+- Hash Map
 ---
 ### Tree
 - Union Find 
