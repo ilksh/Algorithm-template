@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// djb2 hash
 size_t djb2(const char* str)
 {
    // str = "blue"
@@ -90,7 +91,7 @@ private:
 
 int main()
 {
-   ios_base::sync_with_stdio(0), cin.tie(0);
+   ios_base::sync_with_stdio(0), cin.tie(0); 
 
    HashMap hash_map;
    int n, m, cnt = 0;
