@@ -26,7 +26,8 @@
 -  Heap
     - Huffman code
 
-- LCA (Lowest Common Ancestor) 
+- LCA (Lowest Common Ancestor)
+- Segment Tree
 ---
 ### Graph  
 - DFS
@@ -58,3 +59,4 @@
 - Linear Algebra
 - Geometry
 - Number Theory
+- Convex Hull
